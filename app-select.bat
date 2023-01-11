@@ -1,4 +1,10 @@
 @echo off
 
-echo [VERSIONS]
-dir /B/AD/ON
+set SELECTOR_PATH=%~dp0
+set SELECTOR_TITLE=[VERSIONS]
+
+echo %SELECTOR_TITLE%
+dir /B/AD/ON %SELECTOR_PATH%
+
+set SELECTOR_PATH=
+set SELECTOR_TITLE=
